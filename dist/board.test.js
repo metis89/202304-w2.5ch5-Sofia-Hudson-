@@ -3,8 +3,8 @@ describe("Given a randomBoard function", () => {
     describe("When it receives 5 and 5 as parameters", () => {
         test("Then it should return an array of 5 columns and 5 rows", () => {
             const result = createBoard(5, 5);
-            expect(result.length).toBe(5);
-            expect(result[0].length).toBe(5);
+            expect(result).toBe(5);
+            expect(result).toBe(5);
         });
     });
 });
