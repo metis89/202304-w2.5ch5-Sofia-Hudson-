@@ -19,7 +19,7 @@ describe("Given a printBoard function", () => {
         [1, 0, 1],
         [0, 0, 0],
       ];
-      const result = printBoard(generateBoard);
+      const result = generateBoard;
       const expectResult = `⬛⬛⬛\n⬜⬛⬜\n⬛⬛⬛\n`;
       expect(result).toBe(expectResult);
     });

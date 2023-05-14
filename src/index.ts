@@ -1,4 +1,4 @@
-import {createBoard, printBoard} from ./board;
+import { createBoard, printBoard } from "./board";
 
 let generation = 0;
 

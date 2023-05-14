@@ -1,6 +1,24 @@
-describe('Given a createBoard function', () => {
-    describe('When it receives 8 and 8 as arguments', () => {
-        test('Then it should return an array of 8 columns and 8 rows');
+import { createBoard } from "./board";
+describe("Given a randomBoard function", () => {
+    describe("When it receives 5 and 5 as parameters", () => {
+        test("Then it should return an array of 5 columns and 5 rows", () => {
+            const result = createBoard(5, 5);
+            expect(result.length).toBe(5);
+            expect(result[0].length).toBe(5);
+        });
     });
 });
-export {};
+describe("Given a printBoard function", () => {
+    describe("When it receives a nested array of 0s and 1s", () => {
+        test("Then it should return it as a string, where the 0s are turned into ⬛, the 1s are turned into ⬜ and at the end of every array in the main array it injects a breakline", () => {
+            const gameBoard = [
+                [0, 0, 0],
+                [1, 0, 1],
+                [0, 0, 0],
+            ];
+            const result = generateBoard;
+            const expectResult = `⬛⬛⬛\n⬜⬛⬜\n⬛⬛⬛\n`;
+            expect(result).toBe(expectResult);
+        });
+    });
+});
