@@ -8,7 +8,7 @@ describe("Given a randomBoard function", () => {
         });
     });
 });
-describe("Given a printBoard function", () => {
+describe("Given a displayBoard function", () => {
     describe("When it receives a nested array of 0s and 1s", () => {
         test("Then it should return it as a string, where the 0s are turned into ⬛, the 1s are turned into ⬜ and at the end of every array in the main array it injects a breakline", () => {
             const gameBoard = [
