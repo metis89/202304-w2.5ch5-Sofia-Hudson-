@@ -1,8 +1,10 @@
-import { createBoard, printBoard } from . / board;
-let generation = 0;
-setInterval(() => {
-    const board = createBoard(10, 20);
-    console.log(printBoard(board));
-    generation++;
-    console.log(`generation: ${generation}`);
-}, 300);
+import { createBoard, displayBoard, getNewCells } from "./board.js";
+const playGame = () => {
+    const board = createBoard(15, 30);
+    setInterval(() => {
+        console.clear();
+        getNewCells(board);
+        console.log(displayBoard(board));
+    }, 200);
+};
+playGame();
